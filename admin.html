@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | MANDAR AGROTECH</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body class="admin-body">
+
+
+<div class="admin-layout">
+
+
+<aside class="sidebar">
+
+    <div class="admin-logo">
+        🌱 MANDAR<br>
+        <span>AGROTECH</span>
+    </div>
+
+
+    <a class="active"
+       href="admin.html">
+        📊 Dashboard
+    </a>
+
+
+    <a href="#orders">
+        📦 Orders
+    </a>
+
+
+    <a href="#history">
+        📜 Order History
+    </a>
+
+
+    <a href="#transactions">
+        💰 Transactions
+    </a>
+
+
+    <a href="products.html">
+        🌾 Products
+    </a>
+
+
+    <a href="index.html">
+        🌐 Website
+    </a>
+
+</aside>
+
+
+
+<main class="admin-main">
+
+
+<div class="admin-top">
+
+    <div>
+
+        <p>
+            ADMIN DASHBOARD
+        </p>
+
+        <h1>
+            Welcome Back 👋
+        </h1>
+
+    </div>
+
+
+    <div class="admin-user">
+        👤 Administrator
+    </div>
+
+</div>
+
+
+
+<div class="dashboard-cards">
+
+
+<div class="dashboard-card">
+
+    <span>📦</span>
+
+    <div>
+
+        <p>Total Orders</p>
+
+        <h2 id="totalOrders">
+            0
+        </h2>
+
+    </div>
+
+</div>
+
+
+
+<div class="dashboard-card">
+
+    <span>⏳</span>
+
+    <div>
+
+        <p>Pending Orders</p>
+
+        <h2 id="pendingOrders">
+            0
+        </h2>
+
+    </div>
+
+</div>
+
+
+
+<div class="dashboard-card">
+
+    <span>✅</span>
+
+    <div>
+
+        <p>Accepted Orders</p>
+
+        <h2 id="acceptedOrders">
+            0
+        </h2>
+
+    </div>
+
+</div>
+
+
+
+<div class="dashboard-card">
+
+    <span>💰</span>
+
+    <div>
+
+        <p>Total Sales</p>
+
+        <h2 id="totalSales">
+            ₹0
+        </h2>
+
+    </div>
+
+</div>
+
+
+</div>
+
+
+
+<section class="admin-table-section"
+         id="orders">
+
+    <div class="table-heading">
+
+        <div>
+
+            <p>ORDER MANAGEMENT</p>
+
+            <h2>
+                Recent Orders
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Order ID</th>
+
+                    <th>Shop</th>
+
+                    <th>Mobile</th>
+
+                    <th>Products</th>
+
+                    <th>Amount</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="ordersTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<section class="admin-table-section"
+         id="history">
+
+    <div class="table-heading">
+
+        <div>
+
+            <p>ORDER HISTORY</p>
+
+            <h2>
+                Completed Orders
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div id="historyContainer">
+
+    </div>
+
+</section>
+
+
+
+<section class="admin-table-section"
+         id="transactions">
+
+    <div class="table-heading">
+
+        <div>
+
+            <p>PAYMENTS</p>
+
+            <h2>
+                Transactions
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div id="transactionsContainer">
+
+    </div>
+
+</section>
+
+
+</main>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

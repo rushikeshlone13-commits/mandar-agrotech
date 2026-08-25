@@ -1,0 +1,237 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bulk Order | MANDAR AGROTECH</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        🌱 MANDAR <span>AGROTECH</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="order.html">
+            Order Now
+        </a>
+
+        <a href="contact.html">
+            Contact Us
+        </a>
+
+        <a href="admin.html"
+           class="admin-btn">
+            Admin
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="page-header">
+
+    <p>BULK ORDER</p>
+
+    <h1>
+        Place Your Order
+    </h1>
+
+</section>
+
+
+<section class="order-section">
+
+
+<div class="order-form">
+
+    <h2>Shop / Dealer Details</h2>
+
+
+    <label>
+        Shop Name
+    </label>
+
+    <input
+        type="text"
+        id="shopName"
+        placeholder="Enter shop name">
+
+
+    <label>
+        Owner Name
+    </label>
+
+    <input
+        type="text"
+        id="ownerName"
+        placeholder="Enter owner name">
+
+
+    <label>
+        Mobile Number
+    </label>
+
+    <input
+        type="tel"
+        id="mobile"
+        placeholder="Enter mobile number">
+
+
+    <label>
+        Delivery Address
+    </label>
+
+    <textarea
+        id="address"
+        placeholder="Enter complete delivery address">
+    </textarea>
+
+
+    <label>
+        Select Product
+    </label>
+
+    <select id="productSelect">
+
+        <option value="">
+            -- Select Product --
+        </option>
+
+        <option value="NPK 19:19:19|1500">
+            NPK 19:19:19 - ₹1500
+        </option>
+
+        <option value="DAP 18:46:0|1350">
+            DAP 18:46:0 - ₹1350
+        </option>
+
+        <option value="Urea|300">
+            Urea - ₹300
+        </option>
+
+        <option value="Organic Fertilizer|650">
+            Organic Fertilizer - ₹650
+        </option>
+
+        <option value="Micronutrient Mix|800">
+            Micronutrient Mix - ₹800
+        </option>
+
+        <option value="Potash|1200">
+            Potash - ₹1200
+        </option>
+
+        <option value="Neem Cake|500">
+            Neem Cake - ₹500
+        </option>
+
+        <option value="Bio Fertilizer|450">
+            Bio Fertilizer - ₹450
+        </option>
+
+    </select>
+
+
+    <label>
+        Quantity
+    </label>
+
+    <input
+        type="number"
+        id="quantity"
+        min="1"
+        value="1">
+
+
+    <button
+        type="button"
+        id="addProductBtn"
+        class="primary-btn">
+
+        Add Product
+
+    </button>
+
+
+</div>
+
+
+
+<div class="order-summary">
+
+    <h2>
+        Order Summary
+    </h2>
+
+
+    <div id="cartItems">
+
+        <p class="empty-cart">
+            No products added.
+        </p>
+
+    </div>
+
+
+    <div class="total-box">
+
+        <span>
+            Total Amount
+        </span>
+
+        <strong id="totalAmount">
+            ₹0
+        </strong>
+
+    </div>
+
+
+    <button
+        id="placeOrderBtn"
+        class="place-order-btn">
+
+        🚚 Place Bulk Order
+
+    </button>
+
+</div>
+
+
+</section>
+
+
+<footer>
+
+    <h3>
+        🌱 MANDAR AGROTECH
+    </h3>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
