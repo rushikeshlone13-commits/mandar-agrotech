@@ -416,8 +416,111 @@ if (placeOrderBtn) {
             );
 
 
-            window.location.href =
-                "index.html";
+            const billWindow = window.open("", "_blank");
+
+billWindow.document.write(`
+<html>
+<head>
+<title>MANDAR AGROTECH - Bill</title>
+
+<style>
+body {
+    font-family: Arial;
+    padding: 30px;
+}
+
+.bill {
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid #228B22;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+th {
+    background: #228B22;
+    color: white;
+}
+
+.total {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="bill">
+
+<h1>🌱 MANDAR AGROTECH</h1>
+
+<h2>Bulk Order Bill</h2>
+
+<p><b>Order ID:</b> ${orderID}</p>
+<p><b>Shop Name:</b> ${shopName}</p>
+<p><b>Owner Name:</b> ${ownerName}</p>
+<p><b>Mobile:</b> ${mobile}</p>
+<p><b>Address:</b> ${address}</p>
+
+<table>
+
+<tr>
+<th>Product</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Total</th>
+</tr>
+
+${cart.map(item => `
+<tr>
+<td>${item.name}</td>
+<td>₹${item.price}</td>
+<td>${item.quantity}</td>
+<td>₹${item.price * item.quantity}</td>
+</tr>
+`).join("")}
+
+</table>
+
+<div class="total">
+Total Amount: ₹${total}
+</div>
+
+<center>
+<button onclick="window.print()">🖨️ Print Bill</button>
+</center>
+
+</div>
+
+</body>
+</html>
+`);
+
+billWindow.document.close();
 
         }
     );
